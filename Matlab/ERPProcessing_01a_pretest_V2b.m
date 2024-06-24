@@ -6,7 +6,7 @@ clear
 %% Load Dataset
 
 %EEGlab datasets
-filePath = '1_Test_In';
+filePath = '1_Pretest_In';
 num_file = 1;
 fileNames = ls(fullfile(filePath, "*.set"));
 fileNames = string(fileNames);
