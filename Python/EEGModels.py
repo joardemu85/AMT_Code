@@ -152,7 +152,7 @@ def EEGNet(nb_classes,
     
     block2       = SeparableConv2D(F2, (1, 16),
                                    use_bias = False, 
-                                   kernel_regularizer = l1_l2(l1=L1, l2=L2),
+                                   #kernel_regularizer = l1_l2(l1=L1, l2=L2),
                                    padding = 'same')(block1)
     block2       = BatchNormalization()(block2)
     block2       = Activation('elu')(block2)
